@@ -41,6 +41,11 @@ Pada kasus rata-rata, bubble sort akan melakukan perbandingan dan penukaran elem
 
 Pada kasus rata-rata, insertion sort juga akan melakukan perbandingan dan penukaran elemen untuk setiap pasang elemen yang tidak terurut secara benar. Total jumlah operasi yang dilakukan oleh insertion sort pada kasus rata-rata adalah sekitar (n * n), dengan jumlah operasi penukaran yang lebih sedikit dibandingkan kasus terburuk.
 
+
+
+
+
+
 B.	Algoritma TSP (Travelling Salesman Problem) dan Dijkstra 
 
 1.	Worst Case (Kasus Terburuk)
