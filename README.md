@@ -4,6 +4,7 @@
 # NIM   : F55121064
 
 ========================================================================================
+
 # A.	Bubble sort dan Insertion 
 
 # 1.	Worst Case (Kasus Terburuk)
@@ -42,10 +43,7 @@ Pada kasus rata-rata, bubble sort akan melakukan perbandingan dan penukaran elem
 
 Pada kasus rata-rata, insertion sort juga akan melakukan perbandingan dan penukaran elemen untuk setiap pasang elemen yang tidak terurut secara benar. Total jumlah operasi yang dilakukan oleh insertion sort pada kasus rata-rata adalah sekitar (n * n), dengan jumlah operasi penukaran yang lebih sedikit dibandingkan kasus terburuk.
 
-
-
-
-
+========================================================================================
 
 # B.	Algoritma TSP (Travelling Salesman Problem) dan Dijkstra 
 
@@ -84,3 +82,5 @@ Pada kasus rata-rata, algoritma TSP akan mencoba beberapa kemungkinan permutasi 
 •	Algoritma Dijkstra
 
 Pada kasus rata-rata, algoritma Dijkstra akan mencari jalur terpendek dari satu simpul ke semua simpul lainnya. Dalam kasus ini, kita akan menjalankan algoritma Dijkstra dari setiap simpul dalam graf, sehingga total jumlah operasi yang dilakukan adalah sekitar O(V * E * log(V)), dengan V adalah jumlah simpul (7) dan E adalah jumlah edge (23). Jadi, pada kasus rata-rata, algoritma Dijkstra pada graf ini akan melakukan sekitar O(7 * 23 * log(7)) operasi.
+
+========================================================================================
