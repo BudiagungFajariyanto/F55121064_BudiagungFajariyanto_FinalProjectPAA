@@ -3,7 +3,7 @@
 # NAMA  : BUDI AGUNG FAJARIYANTO
 # NIM   : F55121064
 
-A.	Bubble sort dan Insertion 
+# A.	Bubble sort dan Insertion 
 
 1.	Worst Case (Kasus Terburuk)
 
@@ -46,7 +46,7 @@ Pada kasus rata-rata, insertion sort juga akan melakukan perbandingan dan penuka
 
 
 
-B.	Algoritma TSP (Travelling Salesman Problem) dan Dijkstra 
+# B.	Algoritma TSP (Travelling Salesman Problem) dan Dijkstra 
 
 1.	Worst Case (Kasus Terburuk)
    
