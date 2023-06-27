@@ -2,6 +2,7 @@
 # PERANCANGAN DAN ANALISIS ALGORITMA II
 # NAMA  : BUDI AGUNG FAJARIYANTO
 # NIM   : F55121064
+# KELAS : B
 
 =========================================================================
 
