@@ -53,11 +53,11 @@ Disini dapat dilihat seberapa buruk performa algoritma TSP dan Dijkstra saat har
 
 •	Algoritma TSP
 
-Pada kasus terburuk, algoritma TSP akan mencoba semua kemungkinan rute yang melalui semua simpul dan edge. Karena jumlah simpul dalam graf ini adalah 7, maka jumlah kemungkinan permutasi adalah 7! (faktorial 7), yaitu sekitar 5040 kemungkinan permutasi. Oleh karena itu, jumlah operasi yang dilakukan oleh algoritma TSP pada kasus terburuk adalah sekitar O(7!).
+Worst case untuk TSP adalah ketika jumlah simpul (nodes) yang ada dalam graf sangat besar. Dalam kasus ini, TSP memiliki kompleksitas waktu yang tinggi, sehingga mencari solusi optimal dapat menjadi sangat lambat dan mahal secara komputasional. Dalam contoh yang diberikan, terdapat 7 simpul (a, b, c, d, e, f, g), sehingga kompleksitas waktu TSP dapat menjadi eksponensial tergantung pada implementasinya.
 
 •	Algoritma Dijkstra
 
-Pada kasus terburuk, algoritma Dijkstra akan mencari rute terpendek dari satu simpul ke semua simpul lainnya. Dalam kasus ini, akan menjalankan algoritma Dijkstra dari setiap simpul dalam graf, sehingga total jumlah operasi yang dilakukan adalah sekitar O(V * E * log(V)), dengan V adalah jumlah simpul (7) dan E adalah jumlah edge (23). Jadi, pada kasus terburuk, algoritma Dijkstra pada graf ini akan melakukan sekitar O(7 * 23 * log(7)) operasi.
+Worst case untuk algoritma Dijkstra adalah ketika setiap simpul terhubung dengan semua simpul lainnya. Dalam hal ini, kompleksitas waktu Dijkstra adalah O(V^2), di mana V adalah jumlah simpul dalam graf. Dalam contoh yang diberikan, terdapat 7 simpul, sehingga kompleksitas waktu Dijkstra adalah O(7^2) = O(49).
 
 # 2.	Best Case (Kasus Terbaik):
    
@@ -65,11 +65,11 @@ Pada kasus terbaik, kita akan melihat seberapa efisien algoritma TSP dan Dijkstr
 
 •	Algoritma TSP
 
-Pada kasus terbaik, algoritma TSP akan menemukan tur terpendek dengan jumlah simpul yang sedikit. Dalam graf yang diberikan, tidak dapat mengidentifikasi kasus terbaik tertentu karena semua simpul harus dikunjungi, dan tidak ada sifat khusus yang dapat mempercepat pencarian tur terpendek.
+Best case untuk TSP adalah ketika solusi optimal dapat ditemukan dengan cepat. Namun, TSP secara umum merupakan permasalahan NP-complete, yang berarti tidak ada algoritma efisien yang dapat menyelesaikan semua kasus dengan kompleksitas waktu konstan. Oleh karena itu, tidak ada "best case" yang pasti dalam konteks TSP.
 
 •	Algoritma Dijkstra
 
-Pada kasus terbaik, algoritma Dijkstra akan menemukan jalur terpendek antara dua simpul tanpa harus menjelajahi seluruh graf. Dalam graf yang diberikan, tidak dapat mengidentifikasi kasus terbaik tertentu karena setiap simpul harus dihubungkan dengan setiap simpul lainnya, dan tidak ada sifat khusus yang dapat mempercepat pencarian jalur terpendek.
+Best case untuk algoritma Dijkstra adalah ketika simpul tujuan (destination node) terletak dekat dengan simpul asal (source node) dan tidak ada simpul yang perlu dikunjungi di antara keduanya. Dalam kasus ini, algoritma Dijkstra dapat menemukan jalur terpendek dengan cepat dan kompleksitas waktu yang rendah. Namun, dalam contoh yang diberikan, harus ada informasi spesifik mengenai simpul asal dan tujuan, sehingga dapat diketahui secara pasti best case-nya.
 
 # 3.	Average Case (Kasus Rata-rata):
    
@@ -77,10 +77,10 @@ Kasus rata-rata dapat bervariasi tergantung pada distribusi data dan algoritma y
 
 •	Algoritma TSP
 
-Pada kasus rata-rata, algoritma TSP akan mencoba beberapa kemungkinan permutasi tur yang melalui semua simpul dan edge. Jumlah permutasi yang harus diuji dapat bervariasi tergantung pada urutan simpul yang dikunjungi. Karena jumlah simpul dalam graf ini adalah 7, kompleksitas waktu rata-rata algoritma TSP pada kasus ini adalah sekitar O(7!).
+Average case untuk TSP dan Dijkstra dapat bervariasi tergantung pada struktur dan ukuran graf yang digunakan. Pada umumnya, kompleksitas waktu TSP cenderung tinggi karena mencari solusi optimal melibatkan pengujian semua kemungkinan kombinasi jalur, yang membuatnya lebih lambat saat jumlah simpul meningkat. Dalam hal ini, dengan 7 simpul, kompleksitas waktu TSP masih dapat dikendalikan.
 
 •	Algoritma Dijkstra
 
-Pada kasus rata-rata, algoritma Dijkstra akan mencari jalur terpendek dari satu simpul ke semua simpul lainnya. Dalam kasus ini, kita akan menjalankan algoritma Dijkstra dari setiap simpul dalam graf, sehingga total jumlah operasi yang dilakukan adalah sekitar O(V * E * log(V)), dengan V adalah jumlah simpul (7) dan E adalah jumlah edge (23). Jadi, pada kasus rata-rata, algoritma Dijkstra pada graf ini akan melakukan sekitar O(7 * 23 * log(7)) operasi.
+Average case untuk Dijkstra tergantung pada jumlah simpul dan jumlah tepi (edges) dalam graf, serta distribusi bobot tepi. Dalam contoh yang diberikan, kompleksitas waktu Dijkstra akan bergantung pada jumlah simpul dan bobot tepi yang spesifik. Dalam hal ini, dengan 7 simpul dan 23 tepi, kompleksitas waktu Dijkstra tidak terlalu tinggi.
 
 =========================================================================
