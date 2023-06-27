@@ -30,7 +30,7 @@ Pada kasus terbaik, bubble sort akan melakukan perbandingan untuk setiap pasang 
 
 Pada kasus terbaik, insertion sort juga akan melakukan perbandingan untuk setiap pasang elemen, dan karena list sudah terurut secara membesar, tidak ada penukaran elemen yang diperlukan. Jumlah operasi perbandingan yang dilakukan oleh insertion sort pada kasus terbaik adalah sekitar (n * n), tetapi jumlah operasi pertukaran elemen adalah 0.
 
-4.	Average Case (Kasus Rata-rata):
+# 3.	Average Case (Kasus Rata-rata):
    
 Kasus rata-rata dapat bervariasi tergantung pada distribusi data dan algoritma yang digunakan. Untuk kasus ini, kita menggunakan list input yang sama seperti sebelumnya dan mengurutkannya dalam urutan acak.
 
@@ -49,7 +49,7 @@ Pada kasus rata-rata, insertion sort juga akan melakukan perbandingan dan penuka
 
 # B.	Algoritma TSP (Travelling Salesman Problem) dan Dijkstra 
 
-1.	Worst Case (Kasus Terburuk)
+# 1.	Worst Case (Kasus Terburuk)
    
 Disini dapat dilihat seberapa buruk performa algoritma TSP dan Dijkstra saat harus melalui semua simpul dan edge dalam graf yang diberikan. Dalam hal ini, graf yang diberikan memiliki 7 simpul (a, b, c, d, e, f, g) dan 23 edge yang menghubungkan simpul-simpul tersebut. Dalam kasus ini, kita harus mencari rute terpendek yang melalui semua simpul dan edge.
 
@@ -61,7 +61,7 @@ Pada kasus terburuk, algoritma TSP akan mencoba semua kemungkinan rute yang mela
 
 Pada kasus terburuk, algoritma Dijkstra akan mencari rute terpendek dari satu simpul ke semua simpul lainnya. Dalam kasus ini, akan menjalankan algoritma Dijkstra dari setiap simpul dalam graf, sehingga total jumlah operasi yang dilakukan adalah sekitar O(V * E * log(V)), dengan V adalah jumlah simpul (7) dan E adalah jumlah edge (23). Jadi, pada kasus terburuk, algoritma Dijkstra pada graf ini akan melakukan sekitar O(7 * 23 * log(7)) operasi.
 
-3.	Best Case (Kasus Terbaik):
+# 2.	Best Case (Kasus Terbaik):
    
 Pada kasus terbaik, kita akan melihat seberapa efisien algoritma TSP dan Dijkstra saat graf memiliki sifat khusus yang memudahkan pencarian jalur terpendek.
 
@@ -73,7 +73,7 @@ Pada kasus terbaik, algoritma TSP akan menemukan tur terpendek dengan jumlah sim
 
 Pada kasus terbaik, algoritma Dijkstra akan menemukan jalur terpendek antara dua simpul tanpa harus menjelajahi seluruh graf. Dalam graf yang diberikan, tidak dapat mengidentifikasi kasus terbaik tertentu karena setiap simpul harus dihubungkan dengan setiap simpul lainnya, dan tidak ada sifat khusus yang dapat mempercepat pencarian jalur terpendek.
 
-5.	Average Case (Kasus Rata-rata):
+# 3.	Average Case (Kasus Rata-rata):
    
 Kasus rata-rata dapat bervariasi tergantung pada distribusi data dan algoritma yang digunakan. Untuk kasus ini, kita menggunakan graf yang diberikan dan menghitung rata-rata kinerja algoritma TSP dan Dijkstra berdasarkan jumlah simpul dan edge yang ada.
 
@@ -84,5 +84,3 @@ Pada kasus rata-rata, algoritma TSP akan mencoba beberapa kemungkinan permutasi 
 •	Algoritma Dijkstra
 
 Pada kasus rata-rata, algoritma Dijkstra akan mencari jalur terpendek dari satu simpul ke semua simpul lainnya. Dalam kasus ini, kita akan menjalankan algoritma Dijkstra dari setiap simpul dalam graf, sehingga total jumlah operasi yang dilakukan adalah sekitar O(V * E * log(V)), dengan V adalah jumlah simpul (7) dan E adalah jumlah edge (23). Jadi, pada kasus rata-rata, algoritma Dijkstra pada graf ini akan melakukan sekitar O(7 * 23 * log(7)) operasi.
-
-
