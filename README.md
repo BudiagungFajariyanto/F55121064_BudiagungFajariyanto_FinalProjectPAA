@@ -6,9 +6,12 @@
 A.	Bubble sort dan Insertion 
 
 1.	Worst Case (Kasus Terburuk)
+
 Pada kasus terburuk, kita akan melihat seberapa buruk performa kedua algoritma saat list input terurut secara terbalik atau terurut secara menurun. Dalam hal ini, kita akan mengurutkan list sebagai berikut: [99, 97, 95, ..., 3, 2, 1].
 
-Bubble Sort : Pada kasus terburuk, bubble sort akan melakukan perbandingan dan penukaran elemen secara berulang untuk setiap pasang elemen, sehingga total jumlah operasi yang dilakukan adalah sekitar (n * n), dengan n adalah jumlah elemen dalam list. Jadi, jika kita memiliki 80 elemen, maka bubble sort akan melakukan sekitar 6.400 operasi perbandingan dan penukaran.
+• Bubble Sort 
+
+Pada kasus terburuk, bubble sort akan melakukan perbandingan dan penukaran elemen secara berulang untuk setiap pasang elemen, sehingga total jumlah operasi yang dilakukan adalah sekitar (n * n), dengan n adalah jumlah elemen dalam list. Jadi, jika kita memiliki 80 elemen, maka bubble sort akan melakukan sekitar 6.400 operasi perbandingan dan penukaran.
 
 b. Insertion Sort
 Pada kasus terburuk, insertion sort juga akan melakukan perbandingan dan penukaran elemen untuk setiap pasang elemen, namun dalam jumlah yang lebih sedikit daripada bubble sort. Total jumlah operasi yang dilakukan oleh insertion sort pada kasus terburuk adalah sekitar (n * n), sehingga jika kita memiliki 100 elemen, insertion sort akan melakukan sekitar 10.000 operasi perbandingan dan penukaran.
